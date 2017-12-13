@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fx</title>
+    <!-- 倒入ionic的css文件 -->
+    <link rel="stylesheet" href="./ionic/css/ionic.min.css">
+    <!-- 导入自定义的css文件 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 插件的js文件／主文件
+    此文件包含了ionic的核心js，Angularjs，ionic的AngularJs的扩展。 -->
+    <script src="./ionic/js/ionic.min.js"></script>
+    <script src="./ionic/js/ionic.bundle.min.js"></script>
+</head>
+
+<body style="background-color:#f8f8f8;">
+    <!-- 顶部导航条 -->
+    <div class="bar bar-header bar-dark item-input-inset">
+        <a class="button button-clear">微信</a>
+        <a class="button button-clear ion-search  icon-right" style="left:60%;"></a>
+        <a class="button button-clear ion-plus icon-right"></a>
+    </div>
+    <!-- 内容部分 -->
+    <div style="overflow-y:auto;" class="scroll-content has-header" >
+        <!-- 列表里面插入图标的 -->
+        <ul class="list" style="margin-top:20px;">
+            <li class="item item-icon-left item-icon-right">
+                <i class="icon ion-aperture"></i>
+                <h2>朋友圈</h2>
+            </li>
+        </ul>
+        <ul class="list">
+            <li class="item item-icon-left item-icon-right">
+                <i class="icon ion-android-home positive"></i>
+                <!-- 必须使用h标签 -->
+                <h2>扫一扫</h2>
+            </li>
+            <li class="item item-icon-left item-icon-right">
+                <i class="icon ion-social-yen positive"></i>
+                <!-- 必须使用h标签 -->
+                <h2>摇一摇</h2>
+            </li>
+        </ul>
+        <ul class="list">
+            <li class="item item-icon-left item-icon-right">
+                <i class="icon ion-android-home positive"></i>
+                <!-- 必须使用h标签 -->
+                <h2>附件的人</h2>
+            </li>
+            <li class="item item-icon-left item-icon-right">
+                <i class="icon ion-social-yen positive"></i>
+                <!-- 必须使用h标签 -->
+                <h2>漂流瓶</h2>
+            </li>
+        </ul>
+        <ul class="list">
+            <li class="item item-icon-left item-icon-right">
+                <i class="icon ion-android-home positive"></i>
+                <!-- 必须使用h标签 -->
+                <h2>京东购物</h2>
+            </li>
+            <li class="item item-icon-left item-icon-right">
+                <i class="icon ion-social-yen positive"></i>
+                <!-- 必须使用h标签 -->
+                <h2>游戏</h2>
+            </li>
+        </ul>
+        <ul class="list">
+            <li class="item item-icon-left item-icon-right">
+                <i class="icon ion-aperture"></i>
+                <h2>小程序</h2>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tabs tabs-icon-top">
+        <a href="wx.html" class="tab-item">
+            <i class="icon ion-ios-chatbubble-outline"></i>
+            微信
+        </a>
+        <a href="tel.html" class="tab-item">
+            <i class="icon ion-person-stalker "></i>
+            通讯录
+        </a>
+        <a href="fx.html" class="tab-item">
+            <i class="icon ion-android-compass balanced"></i>
+            发现
+        </a>
+        <a href="me.html" class="tab-item">
+            <i class="icon ion-ios-person-outline"></i>
+            我
+        </a>
+    </div>
+</body>
+
+</html>

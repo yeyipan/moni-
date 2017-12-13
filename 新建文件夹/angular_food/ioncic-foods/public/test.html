@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var xhr = new XMLHttpRequest();
+
+        // 存储数据／／监听函数变化的状态
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                var books = JSON.parse(xhr.response)
+                books.forEach(function (item) {
+                    var strHtml = `<ul>
+                                    <li>${item.name}</li>
+                                </ul>
+                                `
+                    var body = document.querySelector('body');
+                    body.innerHTML += strHtml
+                })
+            }
+        }
+        xhr.open('get', '/api/v1/book/all_type')
+        xhr.send();
+    </script>
+</body>
+
+</html>

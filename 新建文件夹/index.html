@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ionic</title>
+    <!-- 倒入ionic的css文件 -->
+    <link rel="stylesheet" href="./ionic/css/ionic.min.css">
+    <!-- 导入自定义的css文件 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 插件的js文件／主文件
+    此文件包含了ionic的核心js，Angularjs，ionic的AngularJs的扩展。 -->
+    <script src="./ionic/js/ionic.min.js"></script>
+    <!-- 初始化Angular的app模块 -->
+    <script src="./js/app.js"></script>
+    <script src="./ionic/js/ionic.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- 顶部导航条 -->
+    <div class="bar bar-header bar-royal item-input-inset">
+        <a class="button button-clear icon-right ion-android-arrow-dropdown">厦门</a>
+        <label class="item-input-wrapper">
+            <input type="text" placeholder="输入商户名搜索">
+        </label>
+    </div>
+
+    <!-- 副标题 -->
+    <div class="bar bar-subheader bar-balanced">
+        <div class="button-bar">
+            <a class="button">新闻</a>
+            <a class="button">国际</a>
+            <a class="button">娱乐</a>
+            <a class="button">体育</a>
+            <a class="button">餐饮</a>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div style="overflow-y:auto;" class="scroll-content has-header has-subheader">
+        <ul class="list cart">
+            <li class="item item-assertive">我的课程</li>
+            <li class="item item-balanced">html5</li>
+            <li class="item item-energized">css3</li>
+            <li class="item item-calm">javascript</li>
+            <li class="item item-royal">jquery</li>
+            <li class="item item-dark">vue</li>
+        </ul>
+
+        <!-- 列表里面包含文字的 -->
+        <ul class="list">
+            <li class="item">
+                <h2>国家政策</h2>
+                <p>现在允许生二胎</p>
+            </li>
+            <li class="item">
+                <h2>幸福的指数</h2>
+                <p>今天，您幸福吗?</p>
+            </li>
+            <li class="item">
+                <h2>中国消费最高的地方是哪里？</h2>
+                <p>根据中国的国情，应该是医院消费最高</p>
+            </li>
+        </ul>
+
+        <!-- 列表里面插入图标的 -->
+        <ul class="item">
+            <li class="item item-icon-left item-icon-right">
+                <i class="icon ion-android-home positive"></i>
+                <!-- 必须使用h标签 -->
+                <h2 class="positive">入住酒店的时间:2017-11-09</h2>
+                <i class="icon ion-ios-arrow-forward calm"></i>
+            </li>
+            <li class="item item-icon-left item-icon-right">
+                <i class="icon ion-social-yen positive"></i>
+                <!-- 必须使用h标签 -->
+                <h2 class="positive">酒店价格：1998/晚</h2>
+                <i class="icon ion-ios-arrow-forward calm"></i>
+            </li>
+        </ul>
+
+        <!--在列表中使用图片 -->
+        <ul class="list">
+            <li class="item item-avatar-left">
+                <img src="./img/cjk.jpg" style="border-radius:50%;">
+                <h2 class="title">邻居家孩子</h2>
+                <p>帅哥，约吗？</p>
+            </li>
+        </ul>
+        <div class="item item-avatar-left">
+            <img src="./img/gxt.jpg" style="border-radius:50%;">
+            <h2 class="title">关晓彤</h2>
+            <p>过来做饭给你吃。。。</p>
+        </div>
+        <div class="item item-avatar-left">
+            <img src="./img/jej.jpg" style="border-radius:50%;">
+            <h2 class="title">焦恩俊</h2>
+            <p>过来找我，教你小李飞刀</p>
+        </div>
+
+        <!-- 在列表中使用缩略图 -->
+        <div class="list">
+            <li class="item item-thumbnail-left">
+                <img src="./img/sq.jpg">
+                <h2 style="font-size:20px;">解决山区孩子上学难的问题</h2>
+                <p style="line-height:50px;">
+                    图1为山区的孩子上学的艰难。披星戴月，风雨无阻 求好心人送辆自行车，最好最好再配个司机.
+                </p>
+            </li>
+        </div>
+
+        <!-- 混合样式的列表使用 -->
+        <ul class="list list-boderless">
+            <!-- 头像 -->
+            <li class="item item-avatar-left item-icon-right">
+                <img src="./img/sxh.jpg">
+                <h2 style="font-size:20px;">附近摇一摇</h2>
+                <i style="font-size:20px;" class="icon icon-location">2km</i>
+            </li>
+            <!-- 大图 -->
+            <li class="item item-image">
+                <h2>刚好老婆不在家，今天出门自拍一下。。。。。</h2>
+                <img src="./img/zyt.jpg">
+            </li>
+            <li class="item item-icon-left">
+                <i class="icon ion-heart assertive"></i>
+                <h4>刘少勇赞了一下</h4>
+            </li>
+        </ul>
+
+        <!-- 按钮 -->
+        <button class="button button-energized">我是按钮</button>
+
+        <!-- 表单样式 -->
+        <!-- item-floating-label表示浮动标签 -->
+        <ul class="item-input stable-bg">
+            <label class="input-label">用户名：</label>
+            <input type="text" placeholder="请输入用户名">
+        </ul>
+
+        <!-- 列表中的表单 -->
+
+        <ul class="list">
+            <li class="item button-input item-floating-label">
+                <label class="input-label">用户名：</label>
+                <input type="text" placeholder="请输入用户名">
+            </li>
+            <li class="item button-input item-floating-label">
+                <label class="input-label">密码：</label>
+                <input type="text" placeholder="请输入密码">
+            </li>
+            <li class="item button-input">
+                <button class="button button-block 
+                button-outline button-balanced">提交</button>
+            </li>
+        </ul>
+
+        <!-- 开关切换 -->
+        <label class="toggle toggle-assertive">
+            <input type="checkbox">
+            <div class="track">
+                <div class="handle"></div>
+            </div>
+        </label>
+
+        <!-- 列表中的开关 -->
+        <ul class="list">
+            <li class="item item-toggle">
+                是否开启无线网
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+
+            <li class="item item-toggle">
+                是否共享照片流
+                <label class="toggle">
+                    <input type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+        </ul>
+
+        <!-- 多选框 -->
+        <ul class="list">
+            <li class="item item-checkbox">
+                <label class="checkbox checkbox-balanced">
+                    <input type="checkbox">
+                </label>
+                <h2>玩具小熊</h2>
+            </li>
+
+            <li class="item item-checkbox">
+                <label class="checkbox checkbox-balanced">
+                    <input type="checkbox">
+                </label>
+                <h2>垂耳小兔</h2>
+            </li>
+
+            <li class="item item-checkbox">
+                <label class="checkbox checkbox-balanced">
+                    <input type="checkbox">
+                </label>
+                <h2>斑点小狗</h2>
+            </li>
+        </ul>
+
+        <!-- 进度条 -->
+        <div class="range">
+            <!-- 减号 图标 -->
+            <i class="ion-minus-round"></i>
+            <!-- 进度条身体 -->
+            <input type="range">
+            <!-- 加号 图标 -->
+            <i class="ion-plus-round"></i>
+        </div>
+
+        <div class="item range">
+            <!-- 音量减号 图标 -->
+            <i class="ion-volume-low"></i>
+            <!-- 进度条身体 -->
+            <input type="range">
+            <!-- 音量加号 图标 -->
+            <i class="ion-volume-high"></i>
+        </div>
+
+        <!-- slect下拉列表 -->
+        <div class="list">
+            <div class="item-input item-select">
+                <div class="input-label">请选择机型</div>
+                <select name="" id="">
+                    <option value="">苹果</option>
+                    <option value="">小米</option>
+                    <option value="">三星</option>
+                    <option value="">锤子</option>
+                    <option value="">华为</option>
+                    <option value="">小辣椒</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs tabs-icon-top">
+        <a href="./////" class="tab-item">
+            <i class="icon ion-chatbubble"></i>
+            微信
+        </a>
+        <a href="./////" class="tab-item">
+            <i class="icon ion-person-stalker balanced"></i>
+            通讯录
+        </a>
+        <a href="./////" class="tab-item">
+            <i class="icon ion-android-compass"></i>
+            发现
+        </a>
+        <a href="./////" class="tab-item">
+            <i class="icon ion-person"></i>
+            我
+        </a>
+    </div>
+</body>
+
+</html>
